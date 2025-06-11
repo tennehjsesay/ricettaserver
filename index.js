@@ -30,11 +30,6 @@ app.use('/auth', authRouter);
 app.use('/signup', signUpRouter);
 app.use('/verify', verifyRouter);
 app.use('/refresh', refreshRouter);
-
-app.use(verifyJWT);
-app.use('/signout', logoutRouter);
-app.use('/users', usersRouter);
-app.use('/favorite', favoriteRouter);
 app.get('/recipes/random', async (req, res) => {
   try {
     const response = await axios.get(`https://api.spoonacular.com/recipes/random`, {
@@ -48,6 +43,11 @@ app.get('/recipes/random', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch data' });
   }
 });
+
+app.use(verifyJWT);
+app.use('/signout', logoutRouter);
+app.use('/users', usersRouter);
+app.use('/favorite', favoriteRouter);
 app.get('/recipes/complexSearch/:offset', async (req, res) => {
     const {offset} = req.params
   try {
