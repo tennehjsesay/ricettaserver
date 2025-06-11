@@ -1,5 +1,5 @@
 const allowedOrigins = [
-    "www.google.com",
+    "https://ricettapp.netlify.app",
     "http://localhost:5173"
 ]
 
