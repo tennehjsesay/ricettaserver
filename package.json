@@ -1,9 +1,9 @@
 {
-  "name": "moviesearch",
+  "name": "ricetta",
   "version": "1.0.0",
-  "description": "RestApi for my movie search application. For managing acess and controls.",
+  "description": "",
   "license": "ISC",
-  "author": "Abubakarr Marah",
+  "author": "Tenneh J. Sesay",
   "type": "module",
   "main": "index.js",
   "scripts": {

@@ -38,7 +38,7 @@ const mailOptions = (receiverEmail) => {
             </div>
 
             <div style="text-align: center; margin: 10px 0;">
-                <a href="http://localhost:5173/signin/${token}" 
+                <a href="http://ricettapp.netlify.app/signin/${token}" 
                     style="display: inline-block; background-color: #191971; color: #ffffff; text-decoration: none; padding: 14px 26px; border-radius: 6px; font-size: 16px; font-weight: 600;">
                     Verify Email
                 </a>
