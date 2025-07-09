@@ -24,9 +24,9 @@ const mailOptions = (receiverEmail) => {
     {expiresIn: "24h"}
 );
     return {
-  from: process.env.VERIFICATION_EMAIL,
+  from: `"Ricetta" <${process.env.VERIFICATION_EMAIL}>`,
   to: receiverEmail,
-  subject: "Verify Your Email - TelaStudio",
+  subject: "Email Verification",
   html: `
     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6fb; padding: 20px;">
         <div style="max-width: 500px; margin: auto; background-color: #ffffff; padding: 10px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);">
